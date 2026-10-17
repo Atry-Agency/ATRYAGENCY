@@ -50,6 +50,12 @@ class SiteTest(unittest.TestCase):
   for limit in ['1 profesional','Hasta 4 profesionales activos','Hasta 10 profesionales activos','300 correos','900 correos']:self.assertIn(limit,s)
   self.assertIn('impuestos está pendiente',s);self.assertIn('No se incluyen pagos online ni WhatsApp automático',s)
   for claim in ['Más elegido','prueba gratis','tarjeta de crédito','aggregateRating']:self.assertNotIn(claim,s)
+ def test_start_opens_the_initial_screen(self):
+  config=json.loads((R/'assets/site-config.js').read_text().split('=',1)[1].strip().removesuffix(';'))['atryTurnos']
+  self.assertEqual(config['startUrl'],config['loginUrl']);self.assertTrue(config['registerUrl'].endswith('#/registro'))
+  starts=[a for _,a in Document((R/'turnos.html').read_text()).tags if a.get('data-turnos-link')=='startUrl']
+  self.assertGreaterEqual(len(starts),6)
+  for a in starts:self.assertTrue(a['href'].endswith('#/login'))
  def test_external_destinations(self):
   for _,a in Document((R/'turnos.html').read_text()).tags:
    if 'data-turnos-link' in a:
