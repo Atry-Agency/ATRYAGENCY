@@ -1,6 +1,7 @@
 
 (() => {
   function initIntro() {
+    if (document.body.classList.contains("turnos-page")) return;
     if (sessionStorage.getItem("atry-intro-seen")) return;
     if (matchMedia("(prefers-reduced-motion: reduce)").matches) return;
 
@@ -75,7 +76,9 @@
       const detail = {
         event: target.dataset.track || "interaction",
         label: target.textContent.trim().replace(/\s+/g, " ").slice(0, 120),
-        path: location.pathname
+        path: location.pathname,
+        ...(target.dataset.demo ? {screen: target.dataset.demo} : {}),
+        ...(target.closest("[data-plan]") ? {plan: target.closest("[data-plan]").dataset.plan} : {})
       };
 
       window.dispatchEvent(new CustomEvent("atry:track", {detail}));

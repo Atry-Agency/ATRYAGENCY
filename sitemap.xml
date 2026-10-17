@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://atry.agency/</loc></url>
-  <url><loc>https://atry.agency/proyectos.html</loc></url>
-  <url><loc>https://atry.agency/servicios.html</loc></url>
-  <url><loc>https://atry.agency/estudio.html</loc></url>
-  <url><loc>https://atry.agency/playground.html</loc></url>
-  <url><loc>https://atry.agency/cafe.html</loc></url>
+  <url><loc>https://atry-agency.github.io/ATRYAGENCY/</loc></url>
+  <url><loc>https://atry-agency.github.io/ATRYAGENCY/proyectos.html</loc></url>
+  <url><loc>https://atry-agency.github.io/ATRYAGENCY/servicios.html</loc></url>
+  <url><loc>https://atry-agency.github.io/ATRYAGENCY/estudio.html</loc></url>
+  <url><loc>https://atry-agency.github.io/ATRYAGENCY/playground.html</loc></url>
+  <url><loc>https://atry-agency.github.io/ATRYAGENCY/cafe.html</loc></url>
+  <url><loc>https://atry-agency.github.io/ATRYAGENCY/turnos.html</loc></url>
 </urlset>
