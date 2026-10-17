@@ -5,6 +5,7 @@ window.ATRY_CONFIG = {
   "analyticsEnabled": false,
   "atryTurnos": {
     "appUrl": "https://atry-agency.github.io/ATRY-Turnos/",
+    "startUrl": "https://atry-agency.github.io/ATRY-Turnos/#/login",
     "loginUrl": "https://atry-agency.github.io/ATRY-Turnos/#/login",
     "registerUrl": "https://atry-agency.github.io/ATRY-Turnos/#/registro",
     "demoUrl": "",

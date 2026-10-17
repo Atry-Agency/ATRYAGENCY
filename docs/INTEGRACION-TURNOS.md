@@ -53,9 +53,9 @@ Las animaciones se limitan a entradas y cambios de pantalla. `prefers-reduced-mo
 - La API de GitHub confirmó Pages desde `main`, carpeta `/`, sin dominio personalizado (`cname: null`). Se reemplazan los canonical provisionales `atry.agency` de esta copia por ese destino real.
 - Home: Productos → `#productos`; interiores → `index.html#productos`.
 - Descubrir ATRY Turnos → `turnos.html`.
-- Comenzar ahora → `https://atry-agency.github.io/ATRY-Turnos/#/registro`.
+- Comenzar ahora → `https://atry-agency.github.io/ATRY-Turnos/#/login`, la pantalla inicial con el panel violeta a la izquierda. Desde allí se elige Crear mi negocio.
 - Iniciar sesión → `https://atry-agency.github.io/ATRY-Turnos/#/login`.
-- Los botones de las tarjetas abren el registro real. El plan se solicita dentro de la aplicación; no se inventa un parámetro de preselección no soportado.
+- Los botones de las tarjetas abren la pantalla inicial de acceso. Desde allí se continúa al registro real. El plan se solicita dentro de la aplicación; no se inventa un parámetro de preselección no soportado.
 - `by ATRY Agency` vuelve a la web corporativa. Playground se conserva en el footer.
 
 La autenticación y el funcionamiento del producto continúan fuera de este repositorio. No se modificó Supabase, ATRY Lab ni el backend de Turnos. Tampoco se cambió el repositorio personal `RodrigoBrun/ATRYAGENCY`.
