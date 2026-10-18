@@ -7,7 +7,7 @@
   "theme_color": "#050505",
   "icons": [
     {
-      "src": "assets/FAVICON-DEGRADE.png",
+      "src": "assets/home-icons/icon-512-v1.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"
