@@ -39,8 +39,7 @@ function initHeader() {
     menu.inert = !open;
     qsa('main, .site-footer').forEach(el => { el.inert = open; });
     document.body.classList.toggle('locked', open);
-    if (open) menu.querySelector('a')?.focus();
-    else if (restore) toggle.focus();
+    if (!open && restore) toggle.focus();
   }
   toggle.addEventListener('click', () => setOpen(!menu.classList.contains('open')));
   qsa('a', menu).forEach(a => a.addEventListener('click', () => setOpen(false)));
