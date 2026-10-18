@@ -63,11 +63,6 @@
 .tp-header .desktop-nav a:hover{color:#3541c9}
 .tp-header .desktop-nav .tp-text-link{padding-left:14px;border-left:1px solid var(--tp-border);text-decoration:underline}
 .tp-header-cta{min-height:44px;padding:12px 18px;font-size:15px;white-space:nowrap}
-.tp-header .menu-toggle{background:#141523;color:#fff;border-radius:8px;width:44px;height:44px;min-width:44px;align-items:center;justify-content:center;gap:6px;flex-direction:column;flex-shrink:0;border:0}
-.tp-header .menu-toggle span{display:block;width:19px;height:2px;background:#fff;position:static;transform:none}
-.turnos-page .mobile-menu{background:#141523}
-.turnos-page .mobile-menu .tp-text-link{color:#c6cdff}
-.turnos-page .mobile-menu .tp-button{max-width:520px}
 .tp-hero{display:grid;grid-template-columns:1fr 1.05fr;gap:40px;padding-top:82px;padding-bottom:84px;align-items:center}
 .tp-hero-copy{position:relative;z-index:1;min-width:0}
 .tp-hero .tp-kicker{font-size:10px;letter-spacing:.1em;display:flex;gap:8px;align-items:center}
