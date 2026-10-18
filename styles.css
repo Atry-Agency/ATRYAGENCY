@@ -2297,6 +2297,8 @@ button {
 /* Intro breve de primera visita por sesión */
 .site-intro {
   position: fixed;
+  height: 100vh;
+  height: 100dvh;
   inset: 0;
   z-index: 5000;
   display: grid;
@@ -2321,6 +2323,10 @@ button {
 
 .site-intro__mark span {
   position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -36px;
+  margin-top: -36px;
   width: 72px;
   height: 72px;
   border: 2px solid var(--cyan);
@@ -2338,7 +2344,14 @@ button {
 }
 
 .site-intro__mark strong {
-  position: relative;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  width: max-content;
+  line-height: 1;
+  padding-left: .18em;
   z-index: 2;
   opacity: 0;
   letter-spacing: .18em;
