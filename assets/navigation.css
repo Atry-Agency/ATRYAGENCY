@@ -18,6 +18,8 @@ a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible,s
 @media(max-width:1100px){
  .tp-header .desktop-nav{display:none}
  .tp-header .menu-toggle{display:block}
+ .tp-header .menu-toggle[aria-expanded="false"] span{background:#4754E6}
+ .tp-header .menu-toggle[aria-expanded="true"] span{background:#fff}
  .turnos-page .mobile-menu{background:linear-gradient(90deg,#4754E6 0%,#6250DF 100%);background-size:180% 180%;place-content:center;justify-items:center;padding:95px 24px 55px;gap:10px;text-align:center;font-size:clamp(21px,5.8vw,28px);line-height:1;letter-spacing:-.012em}
  .turnos-page .mobile-menu a,.turnos-page .mobile-menu a:nth-child(n){display:flex;align-items:center;justify-content:center;gap:10px;width:auto;max-width:calc(100vw - 48px);margin:0 auto;padding:14px 8px;border:0;border-bottom:1px solid #ffffff3d;border-radius:0;background:transparent;color:#fff;font:inherit;letter-spacing:inherit;min-height:0;white-space:normal;text-align:center;text-decoration:none}
  .turnos-page .mobile-menu a::after{content:none!important;display:none!important}
