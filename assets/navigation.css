@@ -36,3 +36,16 @@ a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible,s
 @media(max-width:600px){.site-header>.pill-button{display:none}.site-header .brand{max-width:150px}.footer-bottom{gap:24px}.footer-bottom nav{font-size:13px}}
 @media(max-width:360px){.section-head>div{min-width:0}.section-head h2{font-size:28px;overflow-wrap:break-word}.tp-header-cta{display:none}.tp-header .menu-toggle{margin-left:auto}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto!important}*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}.reveal{opacity:1;transform:none}}
+
+/* Restore the original Agency mobile menu identity. */
+@media(max-width:1100px){
+ .mobile-menu{background:linear-gradient(135deg,var(--cyan) 0%,var(--blue) 42%,var(--violet) 100%);background-size:180% 180%;animation:mobileGradient 8s ease infinite}
+ .site-header:has(.menu-toggle[aria-expanded="true"]){background:transparent;backdrop-filter:none;border-color:transparent}
+ .site-header+.mobile-menu{justify-content:center;align-items:center;gap:10px;padding:95px 24px 55px;text-align:center}
+ .site-header+.mobile-menu>a,.site-header+.mobile-menu>a:nth-child(n){width:auto;max-width:100%;min-height:0;margin:0 auto;padding:14px 8px;justify-content:center;font-size:clamp(21px,5.8vw,28px);line-height:1;letter-spacing:-.012em;text-align:center;border-bottom:1px solid #ffffff3d}
+ .site-header+.mobile-menu>a:last-child{width:min(300px,100%);margin-top:18px;padding:15px 22px;border:1px solid #ffffffb8;border-radius:999px}
+}
+@media(max-width:390px){
+ .site-header+.mobile-menu{gap:7px}
+ .site-header+.mobile-menu>a,.site-header+.mobile-menu>a:nth-child(n){font-size:20px;padding-block:12px}
+}
