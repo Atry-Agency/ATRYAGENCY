@@ -121,3 +121,19 @@
  .contact-grid>*{min-width:0}.contact-form :is(label,input,select,textarea,fieldset){min-width:0;max-width:100%}
  .viewer-stage[data-device=mobile]{height:auto}.viewer-stage[data-device=mobile] .capture-surface{width:min(100%,390px);height:auto;aspect-ratio:390/844}
 }
+/* Final framing polish: retain complete secondary captures and give the phone its own space. */
+:is(.work,.archive) [data-project-id=sandro] .project-visual,
+:is(.work,.archive) [data-project-id=celeste] .project-visual{aspect-ratio:auto}
+:is(.work,.archive) :is([data-project-id=sandro],[data-project-id=celeste]) .project-visual picture{display:block;aspect-ratio:1440/960;overflow:hidden;border-radius:4px}
+:is(.work,.archive) :is([data-project-id=sandro],[data-project-id=celeste]) .project-visual img{width:100%;height:100%;object-fit:contain}
+.turnos-product-stage{display:grid;grid-template-columns:minmax(0,1fr) clamp(200px,20vw,260px);align-items:center;gap:24px;padding:32px}
+.turnos-mobile-capture{position:relative;inset:auto;width:100%;max-width:none;justify-self:end}
+.turnos-product-stage figcaption{grid-column:1/-1;padding:0}
+@media(max-width:1100px){.turnos-product-stage{grid-template-columns:minmax(0,1fr) 22%;gap:20px;padding:24px}}
+@media(max-width:780px){
+ :is(.work,.archive) :is([data-project-id=sandro],[data-project-id=celeste]) .project-visual picture{aspect-ratio:.85}
+ :is(.work,.archive) :is([data-project-id=sandro],[data-project-id=celeste]) .project-visual img{object-fit:cover;object-position:top}
+ .turnos-product-stage{grid-template-columns:minmax(0,1fr) 32%;gap:14px;padding:15px}
+ .turnos-product-stage figcaption{font-size:9px}
+}
+@media(min-width:601px) and (max-width:1000px){:is(.work,.archive) :is([data-project-id=sandro],[data-project-id=celeste]) .project-visual picture{aspect-ratio:1.5}:is(.work,.archive) :is([data-project-id=sandro],[data-project-id=celeste]) .project-visual img{object-fit:cover;object-position:top}}

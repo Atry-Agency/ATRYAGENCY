@@ -39,3 +39,11 @@ Las capturas de revisión son encuadres de sección: se excluye la cabecera fija
 - Previsualización local: `http://127.0.0.1:3356/`.
 
 Pendiente únicamente revisión estética del usuario antes de autorizar publicación. No se ejecutó push ni despliegue.
+
+## Pulido final posterior a la aprobación de dirección
+
+- Sandro: nuevas capturas de escritorio, tablet y móvil mediante desplazamiento nativo hasta su portada principal. No se alteraron DOM, estilos ni contenido del sitio. El manifiesto registra el desplazamiento exacto y la nueva fecha.
+- Celeste: el marco de escritorio conserva la captura completa, con titular y acciones sin cortes; el encuadre móvil mantiene el titular completo.
+- Turnos: el móvil gana tamaño y dispone de una columna propia. Una nueva aserción geométrica comprueba que no se superpone sobre la agenda, en los ocho escenarios Chrome/WebKit de 320, 390, 430 y 1440 px.
+- El visualizador indica «Capturas reales» y «Capturas estáticas», y explica que para navegar y probar cada experiencia hay que abrir el sitio original.
+- 10 verificaciones estáticas, 3 pruebas de enlaces y las 8 combinaciones de navegador/viewport aprobadas nuevamente. Sin publicación, backend ni cambios en los sitios originales.

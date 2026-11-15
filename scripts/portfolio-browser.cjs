@@ -15,6 +15,12 @@ const base=process.env.ATRY_AGENCY_PREVIEW||'http://127.0.0.1:3356';
   // Rapid changes must keep the last selected project, even with pending image decode.
   await page.locator('#project-picker [data-id=sandro]').click();await page.locator('#project-picker [data-id=jarama]').click();await page.locator('#project-picker [data-id=celeste]').click();await page.locator('#live-capture[data-state=ready]').waitFor();assert((await page.locator('#live-capture img').getAttribute('src')).includes('celeste-'));
   await page.route('**/assets/projects/jarama-*.webp',r=>r.abort());await page.reload();await page.locator('#project-picker [data-id=jarama]').click();await page.locator('#live-capture[data-state=error]').waitFor();assert.equal(await page.locator('#live-capture img').count(),0);assert.equal(await page.locator('#live-open').getAttribute('href'),'https://rodrigobrun.github.io/PruebaJarama/');await page.unroute('**/assets/projects/jarama-*.webp');await page.locator('#project-picker [data-id=sandro]').click();await page.locator('#live-capture[data-state=ready]').waitFor();
+  // The larger mobile product view has its own rail, never covering the agenda.
+  await page.locator('#productos').scrollIntoViewIfNeeded();
+  const agenda=await page.locator('.turnos-desktop-capture').boundingBox(),phone=await page.locator('.turnos-mobile-capture').boundingBox();
+  assert(phone.x>=agenda.x+agenda.width+10,'Product phone must not cover the agenda');
+  assert.match(await page.locator('.live-heading>p').innerText(),/Capturas reales/);
+  assert.match(await page.locator('.viewer-footer').innerText(),/Capturas estáticas/);
   // Keep the rest of the page usable, without sending the contact form.
   await page.locator('#goal-select').selectOption('reservas');await page.locator('#idea-builder button[type=submit]').click();assert((await page.locator('#idea-result').innerText()).length>30);
   for(const selector of ['#trabajos','#preview','#productos','#servicios','#contacto']){await page.locator(selector).scrollIntoViewIfNeeded();assert(await page.evaluate(()=>document.documentElement.scrollWidth<=document.documentElement.clientWidth+1),name+' '+width+' '+selector)}

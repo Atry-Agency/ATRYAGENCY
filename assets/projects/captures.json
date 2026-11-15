@@ -6,9 +6,11 @@
     "width": 1440,
     "height": 960,
     "status": 200,
-    "capturedAt": "2026-11-15T04:46:54.538Z",
+    "capturedAt": "2026-11-15T05:19:13.184Z",
     "title": "Sandro Fernández Transportes — Transporte forestal en Uruguay",
-    "file": "assets/projects/sandro-desktop.webp"
+    "file": "assets/projects/sandro-desktop.webp",
+    "scrollY": 482,
+    "note": "Encuadre nativo de la portada principal, obtenido desplazando el sitio real. Sin cambios de DOM, CSS ni contenido."
   },
   {
     "id": "sandro",
@@ -17,9 +19,11 @@
     "width": 834,
     "height": 1112,
     "status": 200,
-    "capturedAt": "2026-11-15T04:46:57.052Z",
+    "capturedAt": "2026-11-15T05:19:15.346Z",
     "title": "Sandro Fernández Transportes — Transporte forestal en Uruguay",
-    "file": "assets/projects/sandro-tablet.webp"
+    "file": "assets/projects/sandro-tablet.webp",
+    "scrollY": 564,
+    "note": "Encuadre nativo de la portada principal, obtenido desplazando el sitio real. Sin cambios de DOM, CSS ni contenido."
   },
   {
     "id": "sandro",
@@ -28,9 +32,11 @@
     "width": 390,
     "height": 844,
     "status": 200,
-    "capturedAt": "2026-11-15T04:46:59.383Z",
+    "capturedAt": "2026-11-15T05:19:16.808Z",
     "title": "Sandro Fernández Transportes — Transporte forestal en Uruguay",
-    "file": "assets/projects/sandro-mobile.webp"
+    "file": "assets/projects/sandro-mobile.webp",
+    "scrollY": 654,
+    "note": "Encuadre nativo de la portada principal, obtenido desplazando el sitio real. Sin cambios de DOM, CSS ni contenido."
   },
   {
     "id": "jarama",
