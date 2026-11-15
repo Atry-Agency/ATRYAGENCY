@@ -52,11 +52,11 @@ class SiteTest(unittest.TestCase):
   s=(R/'turnos.html').read_text();self.assertIn('Uruguay y Panamá',s);self.assertIn('IAtry',s)
  def test_removed_project_and_no_remote_embeds(self):
   js=(R/'script.js').read_text()
-  for text in ['Salud y Bienestar','github.io/SYB',"id:'syb'",'<iframe','setTimeout(']:self.assertNotIn(text,js)
+  for text in ['Salud y Bienestar','github.io/SYB',"id:'syb'",'Celeste en Agenda','Partidos-de-Uruguay','<iframe','setTimeout(']:self.assertNotIn(text,js)
   self.assertIn('img.onload=',js);self.assertIn('img.onerror=',js);self.assertIn('captureRequests.get(surface)!==token',js)
   self.assertNotIn('live-iframe',(R/'index.html').read_text())
  def test_capture_sources_budget_and_dimensions(self):
-  records=json.loads((R/'assets/projects/captures.json').read_text());self.assertEqual(len(records),12)
+  records=json.loads((R/'assets/projects/captures.json').read_text());self.assertEqual(len(records),9)
   for row in records:
    self.assertEqual(row['status'],200);self.assertTrue(row['url'].startswith('https://'));self.assertIn(row['device'],['desktop','tablet','mobile'])
    self.assertTrue((R/row['file']).is_file());self.assertLess((R/row['file']).stat().st_size,120_000)

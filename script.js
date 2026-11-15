@@ -2,7 +2,6 @@
 const projects=[
 {id:'jarama',name:'Jarama Home & Deco',category:'ecommerce web',type:'Proyecto en desarrollo',url:'https://rodrigobrun.github.io/PruebaJarama/',label:'Retail / E-commerce',desc:'Un espacio digital para descubrir muebles, objetos y nuevas maneras de habitar. Catálogo y experiencia de compra con una mirada editorial.',tags:['E-commerce','UX/UI','Catálogo']},
 {id:'sandro',name:'Sandro Fernández Transportes',category:'web',type:'Sitio publicado',url:'https://sandrofernandeztransportes.com.uy/',label:'Industria / Web corporativa',desc:'Una presencia digital sólida para una empresa que mueve industria. Servicios, flota y trayectoria, en un recorrido claro.',tags:['Dirección digital','Desarrollo web','Responsive']},
-{id:'celeste',name:'Celeste en Agenda',category:'product web',type:'Producto propio',url:'https://rodribru.github.io/Partidos-de-Uruguay-Mundial/',label:'Deporte / Experiencia digital',desc:'Seguir a Uruguay, descubrir los encuentros y llevarlos al calendario. Una idea simple, convertida en una experiencia digital propia.',tags:['Producto digital','Calendarios','Interacción']}
 ];
 const captureSrc=(project,device='desktop')=>`assets/projects/${project.id}-${device}.webp`;
 const services=[

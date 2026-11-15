@@ -72,39 +72,6 @@
     "file": "assets/projects/jarama-mobile.webp"
   },
   {
-    "id": "celeste",
-    "url": "https://rodribru.github.io/Partidos-de-Uruguay-Mundial/",
-    "device": "desktop",
-    "width": 1440,
-    "height": 960,
-    "status": 200,
-    "capturedAt": "2026-11-15T04:47:10.181Z",
-    "title": "Celeste en agenda · Uruguay 2026",
-    "file": "assets/projects/celeste-desktop.webp"
-  },
-  {
-    "id": "celeste",
-    "url": "https://rodribru.github.io/Partidos-de-Uruguay-Mundial/",
-    "device": "tablet",
-    "width": 834,
-    "height": 1112,
-    "status": 200,
-    "capturedAt": "2026-11-15T04:47:12.541Z",
-    "title": "Celeste en agenda · Uruguay 2026",
-    "file": "assets/projects/celeste-tablet.webp"
-  },
-  {
-    "id": "celeste",
-    "url": "https://rodribru.github.io/Partidos-de-Uruguay-Mundial/",
-    "device": "mobile",
-    "width": 390,
-    "height": 844,
-    "status": 200,
-    "capturedAt": "2026-11-15T04:47:14.718Z",
-    "title": "Celeste en agenda · Uruguay 2026",
-    "file": "assets/projects/celeste-mobile.webp"
-  },
-  {
     "id": "turnos",
     "url": "https://atryturnos.com/?demo=1&plan=2&capture=1#/app/agenda",
     "device": "desktop",

@@ -53,3 +53,7 @@ Pendiente únicamente revisión estética del usuario antes de autorizar publica
 Presentación decorativa de titanio oscuro, borde fino con reflejo contenido, esquinas continuas, botones laterales, barra de estado, Dynamic Island y gesto inferior. El bloque de estado y el gesto están fuera del archivo de captura: no se recorta, retoca ni superpone ningún elemento a la imagen original del panel. Los adornos quedan fuera del árbol de accesibilidad. Sin animaciones ni dependencias nuevas.
 
 Comprobación enfocada Chrome/WebKit a 320, 390, 430 y 1440 px: imagen completa cargada, estado arriba y gesto abajo sin solapamientos, teléfono separado de la agenda y cero desbordamiento horizontal. Las 10 pruebas estáticas volvieron a pasar. No se modificó ningún archivo de captura ni el proyecto ATRY Turnos. Sin push ni publicación.
+
+## Selección final de portfolio
+
+Por instrucción del propietario, el catálogo público queda limitado a Jarama Home & Deco y Sandro Fernández Transportes. Celeste se retiró del catálogo compartido, capturas distribuidas y filtros sin resultados. Su sitio y repositorio originales permanecen intactos. La grilla de escritorio pasa a dos piezas equilibradas en la misma fila; en móvil conserva una columna. La sección independiente ATRY Turnos y su marco de iPhone se mantienen.

@@ -2,12 +2,11 @@
 :is(.work,.archive,.live-preview,.atry-products,.turnos-story) [hidden]{display:none!important}
 :is(.work,.archive) .project-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:44px 30px}
 :is(.work,.archive) .project-card{grid-row:auto;min-height:0;background:transparent;border-radius:0;overflow:visible;transform:none;transition:none}
-:is(.work,.archive) .project-card:first-child{grid-column:1/-1}
+:is(.work,.archive) .project-card:first-child{grid-column:auto}
 :is(.work,.archive) .project-grid:is([data-filter=ecommerce],[data-filter=product]){grid-template-columns:1fr;max-width:1040px;margin-inline:auto}
 :is(.work,.archive) .project-visual{display:block;width:100%;height:auto;min-height:0;aspect-ratio:1.5;padding:24px;border:0;border-radius:16px;background:#e7e9eb;position:relative;overflow:hidden;text-align:left}
-:is(.work,.archive) .project-card:first-child .project-visual{aspect-ratio:1.9;padding:36px 70px;background:#e8e7e3}
+:is(.work,.archive) .project-card:first-child .project-visual{aspect-ratio:auto;padding:24px;background:#e8e7e3}
 :is(.work,.archive) [data-project-id=jarama] .project-visual{background:#e9e5df}
-:is(.work,.archive) [data-project-id=celeste] .project-visual{background:#d9e9ee}
 .project-visual img{display:block;width:100%;height:auto;box-shadow:0 14px 36px #00000012;border-radius:4px;transition:transform .45s cubic-bezier(.2,.7,.2,1)}
 .project-visual:hover img{transform:translateY(-5px)}
 .project-visual-action{position:absolute;bottom:16px;right:16px;width:44px;height:44px;border-radius:50%;background:#fff;color:#111;display:grid;place-items:center;box-shadow:0 2px 12px #0000000c;font-size:20px}
@@ -123,20 +122,20 @@
 }
 /* Final framing polish: retain complete secondary captures and give the phone its own space. */
 :is(.work,.archive) [data-project-id=sandro] .project-visual,
-:is(.work,.archive) [data-project-id=celeste] .project-visual{aspect-ratio:auto}
-:is(.work,.archive) :is([data-project-id=sandro],[data-project-id=celeste]) .project-visual picture{display:block;aspect-ratio:1440/960;overflow:hidden;border-radius:4px}
-:is(.work,.archive) :is([data-project-id=sandro],[data-project-id=celeste]) .project-visual img{width:100%;height:100%;object-fit:contain}
+:is(.work,.archive) [data-project-id=jarama] .project-visual{aspect-ratio:auto}
+:is(.work,.archive) :is([data-project-id=sandro],[data-project-id=jarama]) .project-visual picture{display:block;aspect-ratio:1440/960;overflow:hidden;border-radius:4px}
+:is(.work,.archive) :is([data-project-id=sandro],[data-project-id=jarama]) .project-visual img{width:100%;height:100%;object-fit:contain}
 .turnos-product-stage{display:grid;grid-template-columns:minmax(0,1fr) clamp(200px,20vw,260px);align-items:center;gap:24px;padding:32px}
 .turnos-mobile-capture{position:relative;inset:auto;width:100%;max-width:none;justify-self:end}
 .turnos-product-stage figcaption{grid-column:1/-1;padding:0}
 @media(max-width:1100px){.turnos-product-stage{grid-template-columns:minmax(0,1fr) 22%;gap:20px;padding:24px}}
 @media(max-width:780px){
- :is(.work,.archive) :is([data-project-id=sandro],[data-project-id=celeste]) .project-visual picture{aspect-ratio:.85}
- :is(.work,.archive) :is([data-project-id=sandro],[data-project-id=celeste]) .project-visual img{object-fit:cover;object-position:top}
+ :is(.work,.archive) :is([data-project-id=sandro],[data-project-id=jarama]) .project-visual picture{aspect-ratio:.85}
+ :is(.work,.archive) :is([data-project-id=sandro],[data-project-id=jarama]) .project-visual img{object-fit:cover;object-position:top}
  .turnos-product-stage{grid-template-columns:minmax(0,1fr) 32%;gap:14px;padding:15px}
  .turnos-product-stage figcaption{font-size:9px}
 }
-@media(min-width:601px) and (max-width:1000px){:is(.work,.archive) :is([data-project-id=sandro],[data-project-id=celeste]) .project-visual picture{aspect-ratio:1.5}:is(.work,.archive) :is([data-project-id=sandro],[data-project-id=celeste]) .project-visual img{object-fit:cover;object-position:top}}
+@media(min-width:601px) and (max-width:1000px){:is(.work,.archive) :is([data-project-id=sandro],[data-project-id=jarama]) .project-visual picture{aspect-ratio:1.5}:is(.work,.archive) :is([data-project-id=sandro],[data-project-id=jarama]) .project-visual img{object-fit:cover;object-position:top}}
 /* Device chrome is decorative and sits outside the untouched product capture. */
 .turnos-mobile-capture{--phone-radius:clamp(17px,2.8vw,40px);--phone-rim:clamp(3px,.5vw,6px);container-type:inline-size;padding:var(--phone-rim);border:1px solid #8d9198;border-radius:var(--phone-radius);background:#181a1e;overflow:visible;box-shadow:inset 0 0 0 1px #ffffff38,0 22px 40px #18243226,0 3px 7px #1118271c}
 .turnos-mobile-capture::before,.turnos-mobile-capture::after{content:"";position:absolute;width:2px;border-radius:2px;background:#656970;pointer-events:none}
