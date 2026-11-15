@@ -771,10 +771,7 @@ button {
   text-align: center;
 }
 
-.mock-page--syb {
-  background: linear-gradient(120deg,#fbf5bc,#d9f0dd);
-  color: #173c2a;
-}
+
 
 .project-info {
   padding: 24px 26px 28px;

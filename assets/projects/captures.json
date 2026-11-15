@@ -1,0 +1,137 @@
+[
+  {
+    "id": "sandro",
+    "url": "https://sandrofernandeztransportes.com.uy/",
+    "device": "desktop",
+    "width": 1440,
+    "height": 960,
+    "status": 200,
+    "capturedAt": "2026-11-15T04:46:54.538Z",
+    "title": "Sandro Fernández Transportes — Transporte forestal en Uruguay",
+    "file": "assets/projects/sandro-desktop.webp"
+  },
+  {
+    "id": "sandro",
+    "url": "https://sandrofernandeztransportes.com.uy/",
+    "device": "tablet",
+    "width": 834,
+    "height": 1112,
+    "status": 200,
+    "capturedAt": "2026-11-15T04:46:57.052Z",
+    "title": "Sandro Fernández Transportes — Transporte forestal en Uruguay",
+    "file": "assets/projects/sandro-tablet.webp"
+  },
+  {
+    "id": "sandro",
+    "url": "https://sandrofernandeztransportes.com.uy/",
+    "device": "mobile",
+    "width": 390,
+    "height": 844,
+    "status": 200,
+    "capturedAt": "2026-11-15T04:46:59.383Z",
+    "title": "Sandro Fernández Transportes — Transporte forestal en Uruguay",
+    "file": "assets/projects/sandro-mobile.webp"
+  },
+  {
+    "id": "jarama",
+    "url": "https://rodrigobrun.github.io/PruebaJarama/",
+    "device": "desktop",
+    "width": 1440,
+    "height": 960,
+    "status": 200,
+    "capturedAt": "2026-11-15T04:47:02.963Z",
+    "title": "Jarama – Home & Deco",
+    "file": "assets/projects/jarama-desktop.webp"
+  },
+  {
+    "id": "jarama",
+    "url": "https://rodrigobrun.github.io/PruebaJarama/",
+    "device": "tablet",
+    "width": 834,
+    "height": 1112,
+    "status": 200,
+    "capturedAt": "2026-11-15T04:47:05.170Z",
+    "title": "Jarama – Home & Deco",
+    "file": "assets/projects/jarama-tablet.webp"
+  },
+  {
+    "id": "jarama",
+    "url": "https://rodrigobrun.github.io/PruebaJarama/",
+    "device": "mobile",
+    "width": 390,
+    "height": 844,
+    "status": 200,
+    "capturedAt": "2026-11-15T04:47:07.291Z",
+    "title": "Jarama – Home & Deco",
+    "file": "assets/projects/jarama-mobile.webp"
+  },
+  {
+    "id": "celeste",
+    "url": "https://rodribru.github.io/Partidos-de-Uruguay-Mundial/",
+    "device": "desktop",
+    "width": 1440,
+    "height": 960,
+    "status": 200,
+    "capturedAt": "2026-11-15T04:47:10.181Z",
+    "title": "Celeste en agenda · Uruguay 2026",
+    "file": "assets/projects/celeste-desktop.webp"
+  },
+  {
+    "id": "celeste",
+    "url": "https://rodribru.github.io/Partidos-de-Uruguay-Mundial/",
+    "device": "tablet",
+    "width": 834,
+    "height": 1112,
+    "status": 200,
+    "capturedAt": "2026-11-15T04:47:12.541Z",
+    "title": "Celeste en agenda · Uruguay 2026",
+    "file": "assets/projects/celeste-tablet.webp"
+  },
+  {
+    "id": "celeste",
+    "url": "https://rodribru.github.io/Partidos-de-Uruguay-Mundial/",
+    "device": "mobile",
+    "width": 390,
+    "height": 844,
+    "status": 200,
+    "capturedAt": "2026-11-15T04:47:14.718Z",
+    "title": "Celeste en agenda · Uruguay 2026",
+    "file": "assets/projects/celeste-mobile.webp"
+  },
+  {
+    "id": "turnos",
+    "url": "https://atryturnos.com/?demo=1&plan=2&capture=1#/app/agenda",
+    "device": "desktop",
+    "width": 1440,
+    "height": 960,
+    "status": 200,
+    "capturedAt": "2026-11-15T04:47:17.656Z",
+    "title": "Atry Turnos | Gestión de reservas",
+    "file": "assets/projects/turnos-desktop.webp",
+    "note": "Demo pública aislada; escritorio y tablet muestran la semana del 16/11/2026. Sin sesiones ni escrituras remotas."
+  },
+  {
+    "id": "turnos",
+    "url": "https://atryturnos.com/?demo=1&plan=2&capture=1#/app/agenda",
+    "device": "tablet",
+    "width": 834,
+    "height": 1112,
+    "status": 200,
+    "capturedAt": "2026-11-15T04:47:19.557Z",
+    "title": "Atry Turnos | Gestión de reservas",
+    "file": "assets/projects/turnos-tablet.webp",
+    "note": "Demo pública aislada; escritorio y tablet muestran la semana del 16/11/2026. Sin sesiones ni escrituras remotas."
+  },
+  {
+    "id": "turnos",
+    "url": "https://atryturnos.com/?demo=1&plan=2&capture=1#/app/inicio",
+    "device": "mobile",
+    "width": 390,
+    "height": 844,
+    "status": 200,
+    "capturedAt": "2026-11-15T04:47:21.472Z",
+    "title": "Atry Turnos | Gestión de reservas",
+    "file": "assets/projects/turnos-mobile.webp",
+    "note": "Demo pública aislada; escritorio y tablet muestran la semana del 16/11/2026. Sin sesiones ni escrituras remotas."
+  }
+]

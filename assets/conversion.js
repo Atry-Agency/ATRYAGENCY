@@ -96,7 +96,7 @@
 
     const observer = new MutationObserver(() => {
       const content = document.querySelector("#modal-content");
-      if (!content || content.querySelector(".case-study-flow") || !content.querySelector("h2")) return;
+      if (!content || content.querySelector(".modal-capture") || content.querySelector(".case-study-flow") || !content.querySelector("h2")) return;
 
       const title = content.querySelector("h2")?.textContent || "Proyecto";
       const flow = document.createElement("section");

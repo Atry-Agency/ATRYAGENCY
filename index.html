@@ -13,28 +13,29 @@
   <link href="assets/FAVICON-DEGRADE.png" rel="icon" />
   <link href="assets/icons/phosphor/regular/style.css" rel="stylesheet" />
   <link href="assets/icons/phosphor/bold/style.css" rel="stylesheet" />
-  <link href="styles.css?v=2" rel="stylesheet" />
-  <script defer="" src="script.js?v=2"></script>
+  <link href="styles.css?v=3" rel="stylesheet" />
+  <script defer="" src="script.js?v=3"></script>
   <script defer="" src="assets/playground/contact-bridge.js"></script>
   <meta content="ATRY Agency — Branding, web y productos digitales" property="og:title" />
   <meta
     content="ATRY crea marcas, sitios web, tiendas, sistemas de reservas y productos digitales con estrategia, diseño y tecnología."
     property="og:description" />
   <meta content="website" property="og:type" />
-  <meta content="https://atry-agency.github.io/ATRYAGENCY/" property="og:url" />
-  <meta content="https://atry-agency.github.io/ATRYAGENCY/assets/OG-ATRY.png" property="og:image" />
+  <meta content="https://atryagency.com/" property="og:url" />
+  <meta content="https://atryagency.com/assets/OG-ATRY.png" property="og:image" />
   <meta content="summary_large_image" name="twitter:card" />
   <meta content="ATRY Agency — Branding, web y productos digitales" name="twitter:title" />
   <meta
     content="ATRY crea marcas, sitios web, tiendas, sistemas de reservas y productos digitales con estrategia, diseño y tecnología."
     name="twitter:description" />
-  <meta content="https://atry-agency.github.io/ATRYAGENCY/assets/OG-ATRY.png" name="twitter:image" />
+  <meta content="https://atryagency.com/assets/OG-ATRY.png" name="twitter:image" />
   <link href="manifest.webmanifest" rel="manifest" />
-  <link href="https://atry-agency.github.io/ATRYAGENCY/" rel="canonical" />
+  <link href="https://atryagency.com/" rel="canonical" />
   <script defer="True" src="assets/site-config.js"></script>
   <script defer="True" src="assets/conversion.js"></script>
   <script defer="True" src="assets/testimonials.js"></script>
 <link rel="stylesheet" href="assets/navigation.css?v=5"><noscript><style>.reveal{opacity:1!important;transform:none!important}</style></noscript><link rel="stylesheet" href="assets/turnos/turnos.css?v=3"><script defer src="assets/turnos/turnos.js"></script><link rel="apple-touch-icon" sizes="180x180" href="assets/home-icons/icon-180-v1.png">
+<link rel="stylesheet" href="assets/portfolio.css?v=1">
 </head>
 
 <body>
@@ -190,64 +191,19 @@
     <!-- =====================================================
          PREVISUALIZADOR EN VIVO
          ===================================================== -->
-    <section class="live-preview dark-section" id="preview">
+    <section class="live-preview dark-section" id="preview" aria-labelledby="preview-title">
       <div class="container live-layout">
-        <div class="live-copy reveal">
-          <p class="section-index">03 / LIVE PREVIEW</p>
-          <h2>
-            No te contamos cómo funciona.<br />
-            <em>Te dejamos probarlo.</em>
-          </h2>
-          <p>
-            Elegí un proyecto y cambialo entre escritorio, tablet y móvil.
-            Una pequeña muestra de cómo pensamos experiencias reales.
-          </p>
-          <div aria-label="Seleccionar proyecto" class="project-picker" id="project-picker" role="listbox"></div>
-          <div aria-label="Cambiar dispositivo" class="device-switcher">
-            <button class="active" data-device="desktop" type="button">
-              <i aria-hidden="true" class="ph ph-desktop"></i>
-              <span>Desktop</span>
-            </button>
-            <button data-device="tablet" type="button">
-              <i aria-hidden="true" class="ph ph-device-tablet"></i>
-              <span>Tablet</span>
-            </button>
-            <button data-device="mobile" type="button">
-              <i aria-hidden="true" class="ph ph-device-mobile"></i>
-              <span>Mobile</span>
-            </button>
-          </div>
-        </div>
-        <div class="live-frame desktop reveal" id="live-frame">
-          <div class="browser-top">
-            <span aria-hidden="true" class="browser-dots">
-              <i></i>
-              <i></i>
-              <i></i>
-            </span>
-            <span id="live-url">selected-work</span>
-            <a href="#" id="live-open" rel="noopener noreferrer" target="_blank">
-              <i aria-hidden="true" class="ph ph-arrow-square-out"></i>
-              <span>Abrir sitio</span>
-            </a>
-          </div>
-          <div class="live-screen">
-            <div class="loading-state" id="loading-state">
-              <span></span>
-              <p>Cargando experiencia…</p>
-            </div>
-            <iframe id="live-iframe" loading="lazy" title="Vista previa del proyecto"></iframe>
-            <div class="preview-fallback" id="preview-fallback">
-              <img alt="ATRY Agency" src="assets/IMAGOTIPO-BLANCO.png" />
-              <p>
-                Esta web prefiere abrirse en una pestaña nueva.
-              </p>
-              <a class="pill-button pill-button--accent" href="#" id="fallback-link" rel="noopener noreferrer"
-                target="_blank">
-                <span>Visitar proyecto</span>
-                <b aria-hidden="true"><i class="ph-bold ph-arrow-up-right"></i></b>
-              </a>
-            </div>
+        <div class="live-heading reveal"><div><p class="section-index">03 / PROJECT VIEWER</p><h2 id="preview-title">El diseño, de cerca.<br><em>En cada pantalla.</em></h2></div><p>Una mirada a nuestros proyectos, tal como se ven en escritorio, tablet y móvil. Elegí uno y explorá sus detalles.</p></div>
+        <div class="viewer-layout">
+          <div class="project-picker reveal" id="project-picker" role="group" aria-label="Seleccionar proyecto"></div>
+          <div class="viewer-main reveal">
+            <div class="viewer-toolbar"><p><span id="preview-project-title">Jarama Home &amp; Deco</span><small id="preview-project-state">Proyecto en desarrollo</small></p><div class="device-switcher" role="group" aria-label="Cambiar dispositivo">
+              <button class="active" data-device="desktop" type="button" aria-label="Ver en escritorio"><i class="ph ph-desktop" aria-hidden="true"></i><span>Escritorio</span></button>
+              <button data-device="tablet" type="button" aria-label="Ver en tablet"><i class="ph ph-device-tablet" aria-hidden="true"></i><span>Tablet</span></button>
+              <button data-device="mobile" type="button" aria-label="Ver en móvil"><i class="ph ph-device-mobile" aria-hidden="true"></i><span>Móvil</span></button>
+            </div></div>
+            <div class="viewer-stage" id="live-frame" data-device="desktop"><div class="capture-surface" id="live-capture" data-state="loading"><span data-capture-status role="status">Cargando captura…</span></div></div>
+            <div class="viewer-footer"><p>Capturas del sitio <span aria-hidden="true">/</span> <span id="live-url">rodrigobrun.github.io</span></p><a id="live-open" href="https://rodrigobrun.github.io/PruebaJarama/" target="_blank" rel="noopener noreferrer">Abrir sitio original <i class="ph ph-arrow-up-right" aria-hidden="true"></i></a></div>
           </div>
         </div>
       </div>
@@ -279,11 +235,13 @@
     </section>
 <section class="atry-products light-section" id="productos" aria-labelledby="products-title" data-turnos-view="turnos_product_view">
  <div class="container">
-  <div class="tp-section-heading reveal"><p class="section-index">05 / ATRY PRODUCTS</p><h2 id="products-title">Tecnología que creamos.<br>Soluciones que impulsan.</h2><p>No solo diseñamos experiencias digitales. También desarrollamos productos propios para simplificar cómo trabajan los negocios.</p></div>
-  <article class="tp-product-feature reveal"><div class="tp-product-copy"><p class="tp-wordmark">ATRY <span>/ TURNOS</span></p><p class="tp-kicker">SOFTWARE DE GESTIÓN DE RESERVAS</p><h3>Tu tiempo es para tu negocio.<br><em>Los turnos, para ATRY.</em></h3><p>Organizá tus reservas, administrá tu agenda y ofrecé a tus clientes una experiencia más simple y profesional.</p><ul class="tp-benefits"><li><i class="ph ph-calendar-check" aria-hidden="true"></i><span>Reservas online</span></li><li><i class="ph ph-squares-four" aria-hidden="true"></i><span>Tu agenda en un solo lugar</span></li><li><i class="ph ph-devices" aria-hidden="true"></i><span>Acceso desde computadora y celular</span></li></ul><a class="tp-button" href="turnos.html" data-track="turnos_product_click">Descubrir ATRY Turnos<i class="ph ph-arrow-up-right" aria-hidden="true"></i></a><small>Un producto de ATRY Agency.</small></div><figure class="tp-product-visual"><div class="tp-window-bar"><span></span><span></span><span></span><b>ATRY TURNOS / TU NEGOCIO</b></div><img src="assets/turnos/agenda.webp" width="1440" height="960" alt="Agenda semanal real de ATRY Turnos con reservas de demostración" loading="lazy"><div class="tp-mini-phone"><img src="assets/turnos/reservas-mobile.webp" width="390" height="844" alt="Reserva de un servicio desde un celular" loading="lazy"></div><figcaption>Interfaz real · Entorno de demostración.</figcaption></figure></article>
+  <div class="product-editorial reveal"><p class="section-index">05 / ATRY PRODUCTS</p><p>Ideas que no se quedan en ideas.<br>Tecnología que construimos y hacemos crecer.</p></div>
+  <article class="turnos-showcase reveal"><div class="turnos-product-heading"><div><p class="product-signature"><img src="assets/LOGOTIPO-COLOR.png" width="44" height="44" alt=""><span>ATRY / TURNOS</span></p><h2 id="products-title">Tu negocio.<br><em>En su mejor versión.</em></h2></div><div class="turnos-product-lead"><p>Agenda, reservas y personas, en un mismo lugar. Con IAtry para acompañar la gestión y una experiencia que lleva tu identidad.</p><a class="pill-button pill-button--dark" href="https://atryturnos.com/descubrir.html" data-turnos-link="landingUrl" data-track="turnos_product_click"><span>Descubrir ATRY Turnos</span><b aria-hidden="true"><i class="ph-bold ph-arrow-up-right"></i></b></a></div></div>
+   <figure class="turnos-product-stage"><div class="turnos-desktop-capture"><img src="assets/projects/turnos-desktop.webp" width="1440" height="960" alt="Agenda actual de ATRY Turnos con sus vistas y herramientas de gestión" loading="lazy" decoding="async"></div><div class="turnos-mobile-capture"><img src="assets/projects/turnos-mobile.webp" width="390" height="844" alt="Agenda de ATRY Turnos adaptada al celular" loading="lazy" decoding="async"></div><figcaption><span>Diseñado y desarrollado por ATRY Agency</span><span>Uruguay + Panamá</span></figcaption></figure>
+   <div class="turnos-product-details"><p><span>01 / ORGANIZACIÓN</span>Clientes, servicios y profesionales.<br>Una operación conectada.</p><p><span>02 / IATRY</span>Un asistente contextual.<br>Ayuda en el momento indicado.</p><p><span>03 / TU IDENTIDAD</span>Tu marca, tus colores.<br>En cualquier pantalla.</p></div>
+  </article>
  </div>
 </section>
-
     <!-- =====================================================
          IDEA LAB
          ===================================================== -->
