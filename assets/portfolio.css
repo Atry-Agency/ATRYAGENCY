@@ -137,3 +137,16 @@
  .turnos-product-stage figcaption{font-size:9px}
 }
 @media(min-width:601px) and (max-width:1000px){:is(.work,.archive) :is([data-project-id=sandro],[data-project-id=celeste]) .project-visual picture{aspect-ratio:1.5}:is(.work,.archive) :is([data-project-id=sandro],[data-project-id=celeste]) .project-visual img{object-fit:cover;object-position:top}}
+/* Device chrome is decorative and sits outside the untouched product capture. */
+.turnos-mobile-capture{--phone-radius:clamp(17px,2.8vw,40px);--phone-rim:clamp(3px,.5vw,6px);container-type:inline-size;padding:var(--phone-rim);border:1px solid #8d9198;border-radius:var(--phone-radius);background:#181a1e;overflow:visible;box-shadow:inset 0 0 0 1px #ffffff38,0 22px 40px #18243226,0 3px 7px #1118271c}
+.turnos-mobile-capture::before,.turnos-mobile-capture::after{content:"";position:absolute;width:2px;border-radius:2px;background:#656970;pointer-events:none}
+.turnos-mobile-capture::before{left:-3px;top:21%;height:11%;box-shadow:0 -20px 0 -0.3px #656970}
+.turnos-mobile-capture::after{right:-3px;top:27%;height:15%}
+.turnos-phone-display{overflow:hidden;border-radius:calc(var(--phone-radius) - var(--phone-rim));background:#f8f8fc}
+.turnos-phone-status{height:13cqw;position:relative;display:flex;align-items:center;justify-content:space-between;padding:0 5cqw;color:#171b23;font:600 3.7cqw/1 system-ui,-apple-system,sans-serif;letter-spacing:-.02em}
+.turnos-phone-island{position:absolute;left:50%;top:2.6cqw;transform:translateX(-50%);width:30cqw;height:8cqw;border-radius:99px;background:#08090b;box-shadow:inset 0 1px 1px #000}
+.turnos-phone-island>i{position:absolute;right:2.3cqw;top:2.2cqw;width:3.5cqw;height:3.5cqw;border-radius:50%;background:#131923;box-shadow:inset 0 0 0 1px #222b39}
+.turnos-phone-indicators{display:flex;align-items:center;gap:1cqw;font-size:4cqw}
+.turnos-phone-display>img{display:block;width:100%;height:auto}
+.turnos-phone-home{height:7cqw;display:grid;place-items:center;background:#f8f8fc}
+.turnos-phone-home>span{width:32cqw;height:1.2cqw;min-height:1px;border-radius:99px;background:#1a1c22}

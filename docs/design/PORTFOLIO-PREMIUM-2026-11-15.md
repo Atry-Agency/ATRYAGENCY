@@ -47,3 +47,9 @@ Pendiente únicamente revisión estética del usuario antes de autorizar publica
 - Turnos: el móvil gana tamaño y dispone de una columna propia. Una nueva aserción geométrica comprueba que no se superpone sobre la agenda, en los ocho escenarios Chrome/WebKit de 320, 390, 430 y 1440 px.
 - El visualizador indica «Capturas reales» y «Capturas estáticas», y explica que para navegar y probar cada experiencia hay que abrir el sitio original.
 - 10 verificaciones estáticas, 3 pruebas de enlaces y las 8 combinaciones de navegador/viewport aprobadas nuevamente. Sin publicación, backend ni cambios en los sitios originales.
+
+## Marco de teléfono estilo iPhone
+
+Presentación decorativa de titanio oscuro, borde fino con reflejo contenido, esquinas continuas, botones laterales, barra de estado, Dynamic Island y gesto inferior. El bloque de estado y el gesto están fuera del archivo de captura: no se recorta, retoca ni superpone ningún elemento a la imagen original del panel. Los adornos quedan fuera del árbol de accesibilidad. Sin animaciones ni dependencias nuevas.
+
+Comprobación enfocada Chrome/WebKit a 320, 390, 430 y 1440 px: imagen completa cargada, estado arriba y gesto abajo sin solapamientos, teléfono separado de la agenda y cero desbordamiento horizontal. Las 10 pruebas estáticas volvieron a pasar. No se modificó ningún archivo de captura ni el proyecto ATRY Turnos. Sin push ni publicación.
