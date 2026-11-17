@@ -3537,3 +3537,18 @@ h3,
   }
 }
 
+
+/* ATRY signature: the registration curve, mirrored vertically. Content is never masked. */
+.site-footer{
+  --footer-curve-height:clamp(64px,10.5vw,154px);
+  --footer-surface:#050505;
+  position:relative;isolation:isolate;overflow:hidden;
+  background:var(--footer-entry,var(--paper));padding-top:calc(var(--footer-curve-height) + 40px);
+}
+.site-footer::before,.site-footer::after{content:"";position:absolute;z-index:-1;pointer-events:none;background:var(--footer-surface)}
+.site-footer::before{top:0;left:0;width:100%;height:calc(var(--footer-curve-height) + 1px);-webkit-mask:url("assets/atry-footer-curve.svg") top / 100% 100% no-repeat;mask:url("assets/atry-footer-curve.svg") top / 100% 100% no-repeat}
+.site-footer::after{inset:var(--footer-curve-height) 0 0}
+@media(max-width:800px){.site-footer{padding-top:calc(var(--footer-curve-height) + 32px)}}
+
+/* Dark closing sections flow into the footer without a white seam. */
+body:has(.service-cta) .site-footer,body:has(.pg-outro) .site-footer{--footer-entry:#050505}
